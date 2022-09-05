@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+form {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+label {
+    width: 150px;
+    height: 40px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.form-group {
+    display: flex;
+    padding: 10px 0;
+}
+
+.form-control {
+    width: 300px;
+    height:40px;
+    background-color: #fff;
+    flex: 1;
+}
+input {
+    border:1px solid rgba(0,0,0,0.12);
+    box-sizing: border-box;
+}
+button {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(72, 134, 206);
+    color: #fff;
+    border: 0;
+    margin-top: 50px;
+    float: right;
+}
+</style>
+<body>
+    <form>
+        <h1>Sign in</h1>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>

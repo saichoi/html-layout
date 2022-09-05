@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * { 
+        margin: 0;
+        padding: 0;
+    }
+    ul, li {
+        list-style:none;
+    }
+    a { 
+        text-decoration: none;
+        color: inherit;
+    }
+    .menulist {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 60px;
+        border-bottom: 1px solid rgba(0,0,0,0.12);
+        background-color: #fff;
+    }
+    .menu {
+        position: relative;
+        display: block;
+        line-height: 60px;
+        padding: 0 15px;
+        font-weight: 900;
+    }
+    .menu.selected:after{
+        position: absolute;
+        bottom: 19px;
+        left: 13px;
+        right: 13px;
+        height: 9px;
+        background: rgba(0,209,69,0.7);
+        content: '';
+    }
+   
+</style>
+<body>
+    <ul class="menulist">
+	<li>
+		<a href="#" class="menu selected">MENU1</a>
+	</li>
+	<li>
+		<a href="#" class="menu">MENU2</a>
+	</li>
+	<li>
+		<a href="#" class="menu">MENU3</a>
+	</li>
+</ul>
+</body>
+</html>

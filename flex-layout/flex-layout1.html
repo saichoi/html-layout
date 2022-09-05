@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+    html, body {
+        height:100%;
+    }
+    .wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+    }
+    header{
+        width: 100%;
+        height: 50px;
+        background-color: lightblue;
+    }
+    .tablist {
+        width:100%;
+        height:50px;
+        background-color: salmon;
+    }
+    .content {
+        display: flex;
+        flex: 1;
+    }
+    aside {
+        width:30%;
+        display: flex;
+        flex:none;
+        background-color:gold;
+    }
+    section {
+        width: 70%;
+        display: flex;
+        flex: 1;
+        background-color: pink;
+    }
+</style>
+<body>
+    <div class="wrap">
+        <header></header>
+        <div class="tablist"></div>
+        <div class="content">
+            <aside></aside>
+            <section></section>
+        </div>
+    </div>
+</body>
+</html>
